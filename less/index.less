@@ -1,19 +1,209 @@
+body {
+    background: beige;
+}
+
+.page-container {
+    border: 6px solid blue;
+    margin: 20px;
+    height: 1600px;
+    background: beige;
+}
+
 nav {
     display: flex;
     border: 3px solid red;
     justify-content: space-evenly;
+    margin: 5px;
 }
-a {
-    color: green;
-}
-h1 {
-    color: green;
+
+.nav-header-container {
+    border: 3px dashed purple;
+    width: 90%;
+    height: 197px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .nav-menu {
     display: flex;
     justify-content: space-evenly;
-    border: 3px solid blue;
-    width: 90%;
+    border: 3px solid black;
+    width: 98%;
     height: 40px;
+    margin: 5px;
 }
 
+.header-text-box {
+    border: 3px solid brown;
+    width: 98%;
+    height: 140px;
+    background: coral;
+
+}
+
+
+a {
+    color: brown;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+a:hover {
+    font-weight: bold;
+}
+h1 {
+    color: green;
+}
+
+.nav-logo {
+    width: 200px;
+    height: 200px;
+    border: 3px dashed gray;
+    text-align: center;
+    padding-top: 10px;
+    margin: 3px;
+    
+}
+
+// =======================================
+// =======================================
+// =======================================
+// =======================================
+// =======================================
+// =======================================
+// =======================================
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+
+.container{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    width: 33.33333%;
+  }
+}
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 2.0s ease-in-out 0s;
+  -moz-transition: all 2.0s ease-in-out 0s;
+  transition: all 2.0s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+    border-radius: 8px;
+
+}
+
+
+.content-image{
+  width: 100%;
+    border-radius: 8px;
+
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 1.0s ease-in-out 0s;
+
+  
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
