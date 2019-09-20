@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,107 @@
 
     <title>Document</title>
 </head>
-<body>
-        <div class="page-container">
-                <nav>
-                    <div class=nav-logo src="" id="logo">
-                        <img src="logo2.png" alt="Expat Logo">
-                    </div>
-        
-        
-        
-                    <div class="nav-header-container">
-                        <div class='nav-menu'>
-                            <a href="index.html" class="active">Home</a></li>
-                            <a href="About-us.html">About Us</a>
-                            <a href="blog.html">Blog</a>
-                            <!-- <a href="#">Contact</a> -->
-                            <a href="login-register.html">Login/Register</a>                        </div>
-                        <div class="header-text-box">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem at dolorum, quibusdam molestiae
-                                voluptate assumenda iure odio ullam doloremque. Quas consequatur quasi officia molestiae
-                                eligendi omnis. Et obcaecati sint aliquam.</h3>
-                        </div>
-        
-                    </div>
-        
-                </nav>
-        
-</body>
-</html>
 
+<body>
+    <div class="page-container">
+        <nav>
+            <div class=nav-logo src="" id="logo">
+                <img src="logo2.png" alt="Expat Logo">
+            </div>
+
+
+
+            <div class="nav-header-container">
+                <div class='nav-menu'>
+                    <a href="index.html" class="active">Home</a></li>
+                    <a href="About-us.html">About Us</a>
+                    <a href="blog.html">Blog</a>
+                    <!-- <a href="#">Contact</a> -->
+                    <a href="login-register.html">Login/Register</a> </div>
+                <div class="header-text-box">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem at dolorum, quibusdam molestiae
+                        voluptate assumenda iure odio ullam doloremque. Quas consequatur quasi officia molestiae
+                        eligendi omnis. Et obcaecati sint aliquam.</h3>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+
+
+        <!-- NOTE   TABLE FORM    TABLET FORM -->
+        <div class="tablet-form-div">
+            <form class="tablet-form" action="mailto:dummy1@chamisplace.com" method="POST" enctype="multipart/form-data"
+                name="EmailTestForm">
+                Your Name:<br>
+                <input type="text" size="40" name="VisitorName"><br><br>
+                Your Comment:<br>
+                <textarea name="VisitorComment" rows="20" cols="60"></textarea>
+                <br>
+                <br>
+                <h1></h1>
+
+                <div class="subscribe">
+                    <label class="container">Subscribe
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <!-- <label class="container">The Expat Journal Newsletter
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label> -->
+
+                    <!-- <br>
+                    <br> -->
+                    <button id="mail-alert" onclick="myFunction()">SEND</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- NOTE  MOBILE FORM   MOBILE FORM -->
+    <div class="mobile-form">
+        <form class="mobile-form" action="mailto:dummy1@chamisplace.com" method="POST" enctype="multipart/form-data"
+            name="EmailTestForm">
+            Your Name:<br>
+            <input type="text" size="40" name="VisitorName"><br><br>
+            Your Comment:<br>
+            <textarea name="VisitorComment" rows="20" cols="60">
+                    </textarea><br><br>
+            <h1></h1>
+            <label class="container">Subscribe
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">The Expat Journal Newsletter
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <!-- <br>
+<br> -->
+            <button id="mail-alert" onclick=sendButton()>SEND</button>
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
