@@ -17,7 +17,7 @@ nav {
   margin-left: 2.5%;
   margin-top: 2%;
   overflow: hidden;
-  background-image: url("https://images.pexels.com/photos/2305005/pexels-photo-2305005.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-image: url("https://images.unsplash.com/photo-1548628733-d4216c78ae55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1354&q=80");
   background-size: cover;
   height: 250px;
   width: 95%;
@@ -81,7 +81,7 @@ button {
   font-size: 20px;
   border-radius: 8px;
   margin-top: 15px;
-  margin-left: 30%;
+  margin-left: 33%;
   margin-bottom: 5px;
   opacity: 0.6;
   border: 2px solid black;
@@ -100,33 +100,12 @@ button:hover {
   display: flex;
   background: white;
 }
-.contact-page-background {
-  background: beige;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-.tablet-form {
-  height: 480px;
-  border: 3px solid black;
-  background: goldenrod;
-  opacity: 0.6;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact-form-header {
+  font-size: 40px;
+  font-family: 'Indie Flower', cursive;
   text-align: center;
-  margin: 0 auto;
-  padding-top: 40px;
-  font-size: 25px;
-}
-.text-area {
-  border: 5px solid red;
-  height: 400px;
-}
-.mobile-form {
-  display: none;
+  margin-top: 40px;
+  border: 2px solid blue;
 }
 /* The container */
 .container-form {
@@ -320,10 +299,6 @@ button:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Nunito', sans-serif;
-  color: #384047;
-}
 form {
   max-width: 150px;
   margin: 10px auto;
@@ -342,14 +317,7 @@ h1 {
 }
 input[type="text"],
 input[type="password"],
-input[type="date"],
-input[type="datetime"],
 input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
 textarea,
 select {
   background: rgba(255, 255, 255, 0.1);
@@ -364,10 +332,6 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin-bottom: 30px;
-}
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
 }
 .signUp-button {
   color: black;
@@ -399,19 +363,6 @@ label.light {
   font-weight: 300;
   display: inline;
 }
-.number {
-  background-color: #5fcf80;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-radius: 100%;
-}
 @media screen and (min-width: 480px) {
   form {
     max-width: 480px;
@@ -438,12 +389,18 @@ label.light {
   height: 30px;
 }
 .small-icon-boxes:hover {
+  border: 1px solid black;
   border-radius: 50%;
+}
+.new-posts-text {
+  margin-left: 50px;
+  color: black;
+  font-size: 30px;
 }
 .main-blog-container {
   border: 3px dashed green;
   width: 95%;
-  height: 700px;
+  height: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
