@@ -82,9 +82,12 @@ nav {
   text-align: center;
   padding-top: 10px;
   margin: 3px;
-  
 }
-
+@media(max-width: 800px) {
+  .nav-logo {
+display: none;
+  }
+}
 
 .header-text-box {
     // border: 3px solid brown;
@@ -98,20 +101,53 @@ nav {
 }
 @media screen and (max-width: 800px){
     .header-text-box{
-        font-size: 13px;
+        // font-size: 16px;
         font-family: Times;
-        font-family: Arial;
+        font-family: 'Indie Flower', cursive;
 
     }
   }
 // ------------------------------------------------------------------------
+// .expat-intro {
+//   text-align: center;
+//   font-size: 40px;
+//   background: beige;
+//   font-family: 'Indie Flower', cursive;  
+// }
 
 
-// NOTE  .box-under-nav    .box-under-nav    .box-under-nav    .box-under-nav
+.banner-large{
+color: black;
+font-size: 50px;
+background-color: beige;
+text-shadow: rgb(150, 150, 150) 1px 3px 0px, rgb(171, 168, 168) 1px 3px 5px;
+text-align: center;
+}
+.banner-small{
+  color: black;
+  font-size: 22px;
+  background-color: #856036;
+
+
+  
+  text-shadow: rgb(150, 150, 150) 1px 3px 0px, rgb(171, 168, 168) 1px 3px 5px;
+  text-align: center;
+  }
+  
+
+
+
+
+
+
+.highlight-expat{
+  font-family: 'Indie Flower', cursive;
+}
+                          // NOTE  .box-under-nav    .box-under-nav    .box-under-nav    .box-under-nav
 .box-under-nav{
   border: 10px solid ;
   width: 95%;
-  height: 340px;
+  height: 300px;
   margin: 0 auto;
   border-radius: 20px;
   background: beige;
@@ -122,27 +158,144 @@ nav {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  align-items: center;
   font-family: 'Indie Flower', cursive;
   font-size: 18px;
   }
-
-  .sign-up-button {
-    color: #856036;
-    border: 4px solid;
-    width: 100px;
-    border-radius: 5px;
-    background: beige;
-    font-family: Arial;
-    padding: 5px;
-    margin-left: 30%;
-    // border-top-color: #856036;
-    // border-left-color: #5d4426;
-    // border-bottom-color: #856036;
-    // border-right-color: #5d4426;
-    padding: 2px;
-
+@media(max-width: 700px) {
+  .box-under-nav {
+    font-size: 16px;
+    height: 330px;
   }
+}
+@media(max-width: 575px) {
+  .box-under-nav {
+    font-size: 14px;
+    height: 310px;
+  }
+}
+@media(max-width: 400px) {
+  .box-under-nav {
+    // font-size: 12px;
+    height: 360px;
+  }
+}
+@media(max-width: 350px) {
+  .box-under-nav {
+display: none;
+margin-left: 25%;
+  }
+}
+
+// ----------------------------------------------------------------------------
+
+// .description-boxes {
+//   display: flex;
+// }
+
+
+  // ==============BUTTON 1    BUTTON 1    BUTTON 1    BUTTON 1 ===================
+
+  // .sign-up-button {
+    // color: #856036;
+    // border: 4px solid;
+    // width: 150px;
+    // border-radius: 5px;
+    // background: beige;
+    // font-family: Arial;
+    // padding: 5px;
+    // margin-left: 30%;
+    // padding: 10px 20px 10px 20px;}
+  
+// ---------------------------------
+// .button {
+//   background-color: #004A7F;
+//   -webkit-border-radius: 10px;
+//   border-radius: 10px;
+//   border: none;
+//   color: #FFFFFF;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-family: Arial;
+//   font-size: 20px;
+//   padding: 5px 10px;
+//   text-align: center;
+//   margin-left: 30%;
+//   margin-bottom: 10px;
+//   text-decoration: none;
+//   -webkit-animation: glowing 1500ms infinite;
+//   -moz-animation: glowing 1500ms infinite;
+//   -o-animation: glowing 1500ms infinite;
+//   animation: glowing 1500ms infinite;
+// }
+// 
+// @keyframes glowing {
+  // 0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  // 50% { background-color: brown; box-shadow: 0 0 40px #FF0000; }
+  // 100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+//   0% { background-color: brown; box-shadow: 0 0 3px blue }
+//   50% { background-color: brown; box-shadow: 0 0 40px rgb(0, 183, 255); }
+//   100% { background-color: brown; box-shadow: 0 0 3px blue; }
+// }
+
+// ==============BUTTON 2     BUTTON 2    BUTTON 2    BUTTON 2 ===================
+
+.button{
+	background: brown;
+	// padding:20px 10px;
+  color: white;
+  font-size: 25px;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  padding: 0px 80px 0px 80px;
+  padding-left: 35px;
+  margin-left: 35%;
+  justify-content: center;
+  padding-right: 10%;
+  padding-left: 10%;
+
+	
+	animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	//Firefox 1+
+	// -webkit-animation-name: flash;
+	// -webkit-animation-duration: 1s;
+	// -webkit-animation-timing-function: linear;
+	// -webkit-animation-iteration-count: infinite;
+
+	// //Safari 3-4
+	// -moz-animation-name: flash;
+	// -moz-animation-duration: 1s;
+	// -moz-animation-timing-function: linear;
+	// -moz-animation-iteration-count: infinite;
+}
+@media(max-width: 400px) {
+  .button {
+padding-left: 30px;
+padding-right: 40px;
+margin: 20%;
+  
+  }
+}
+// @media only screen and (max-width: 900px) {
+//   .button {
+//     background-color: lightblue;
+//     padding-right: 25px;
+//   padding-left: 25px;
+//   }
+
+@keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1.0; }
+}
+
+  // --------------------------------------------------
 /*eye ball*/
 .eye{
   width: 20px;
@@ -154,11 +307,13 @@ nav {
   // margin-left: 50px;
 }
 #left-eye {
-  margin-left: 78%;
+  margin-left: 20%;
   margin-top: 15px;
 }
 #right-eye {
   margin-top: 15px;
+  padding-left: 10%;
+
 }
 .eye:after{
   background-color: #59488b;
@@ -195,6 +350,8 @@ nav {
 width: 25vw;
 height: 230px;
 padding-top: 20px;
+padding-left: 2px;
+padding-right: 2px;
 
 }
 .middle-text-box {
@@ -231,8 +388,11 @@ padding-top: 20px;
   border-bottom-color: #856036;
   border-right-color: #5d4426;
   border-radius: 10px;
-
-
+}
+@media(max-width: 1000px) {
+  .text-scroll-box {
+    display: none;
+  }
 }
 .left-eye-box {
 // border: 2px solid cyan;
@@ -243,7 +403,7 @@ height: 35px;
 // border: 2px solid cyan;
 width: 20%;
 height: 35px;
-text-align: center;
+// text-align: right;
 
 }
 .scrolling-text {
@@ -355,33 +515,6 @@ button:hover {
 
                              // NOTE   CONTACT PAGE    CONTACT PAGE   CONTACT PAGE 
 
-                            //  .contact-page-background {
-                            //     background: beige;
-                            //     display: flex;
-                            //     flex-direction: column;
-                            //     align-items: center;
-                            //     margin-bottom: 40px;
-                            //   }
-                            //   .tablet-form {
-                            //        height: 480px;
-                            //        border: 3px solid black;
-                            //        background: goldenrod;
-                            //        opacity: 0.6;
-                            //        width: 40%;
-                            //        display: flex;
-                            //        flex-direction: column;
-                            //        align-items: center;
-                            //        text-align: center;
-                            //        margin: 0 auto;
-                            //        padding-top: 40px;
-                            //        font-size: 25px;
-                                   
-
-                            //   }
-                            //   .text-area{
-                            //       border: 5px solid red;
-                            //       height: 400px;
-                            //   }
 
                             //   .mobile-form {
                             //     display: none;
@@ -397,11 +530,11 @@ button:hover {
     // border: 2px solid blue;
 
 }
-// .contact-us-box {
-//     margin: 0 auto;
-//     border: 2px dashed blue;
+.contact-us-box {
+    margin: 0 auto;
+    // border: 2px dashed blue;
 
-// }
+}
                                 //   ============================================================
 
                               
@@ -443,64 +576,8 @@ button:hover {
                               width: 0;
 
                             }
-                            
-                            /* Create a custom checkbox */
-                            .checkmark {
-                              position: absolute;
-                              top: 0;
-                              left: 0;
-                              height: 15px;
-                              width: 15px;
-                            //   background-color: #eee;
-                              background: white;
-                            }
-                            // .checkbox {
-                            //     height: 15px;
-                            //     width: 15px;
-                            //     color: blue;
-                            //     border: 1px solid black;
+ 
 
-                            // }
-                            
-                            /* When the checkbox is checked, add a blue background */
-                            // .container-form input:checked ~ .checkmark {
-                            //   background-color: #2196F3;
-                            // }
-                            
-                            /* Create the checkmark/indicator (hidden when not checked) */
-                            // .checkmark:after {
-                            //   content: "";
-                            //   position: absolute;
-                            //   display: none;
-                            // }
-                            
-                            /* Show the checkmark when checked */
-                            // .container-form input:checked ~ .checkmark:after {
-                            //   display: block;
-                            // }
-                            
-                            // /* Style the checkmark/indicator */
-                            // .container-form .checkmark:after {
-                            //   left: 9px;
-                            //   top: 5px;
-                            //   width: 5px;
-                            //   height: 10px;
-                            //   border: solid white;
-                            //   border-width: 0 3px 3px 0;
-                            //   -webkit-transform: rotate(45deg);
-                            //   -ms-transform: rotate(45deg);
-                            //   transform: rotate(45deg);
-                            // }
-
-
-
-
-// =======================================
-// =======================================
-// =======================================
-// =======================================
-// =======================================
-// =======================================
 // =======================================
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
@@ -512,11 +589,6 @@ button:hover {
   box-sizing: border-box;
 }
 
-// body{
-//   background: #f9f9f9;
-//   font-size: 16px;
-//   font-family: 'Raleway', sans-serif;
-// }
 
 .main-title{
   color: #2d2d2d;
@@ -674,11 +746,7 @@ img {
                         -webkit-box-sizing: border-box;
                         box-sizing: border-box;
                       }
-                      
-                    //   body {
-                    //     font-family: 'Nunito', sans-serif;
-                    //     color: #384047;
-                    //   }
+ 
                     //                  NOTE        CONTACT US      CONTACT US      CONTACT US
                       form {
                         max-width: 150px;
@@ -692,8 +760,11 @@ img {
                         opacity: 0.7;
                         border-radius: 8px;
                         color: black;
+                        padding-bottom: 50px;
                       }
-                      
+                      .form {
+
+                      }
                       h1 {
                         margin: 0 0 30px 0;
                         text-align: center;
@@ -704,11 +775,7 @@ img {
                     //   input[type="date"],
                     //   input[type="datetime"],
                       input[type="email"],
-                    //   input[type="number"],
-                    //   input[type="search"],
-                    //   input[type="tel"],
-                    //   input[type="time"],
-                    //   input[type="url"],
+
                       textarea,
 
                       select {
@@ -726,17 +793,7 @@ img {
                         margin-bottom: 30px;
                       }
                       
-                    //   input[type="radio"],
-                    //   input[type="checkbox"] {
-                    //     margin: 0 4px 8px 0;
-                    //   }
-                      
-                    //   select {
-                    //     padding: 6px;
-                    //     height: 32px;
-                    //     border-radius: 2px;
-                    //     border: 4px solid blue;
-                    //   }
+
                       
                       .signUp-button {
                         // padding: 19px 39px 18px 39px;
@@ -816,19 +873,14 @@ img {
                         // height: 32px;
                         border-radius: 50%;
 
-
-
-
-
-
-
-
                     }
                     .new-posts-text {
                     margin-left: 50px;
                     color: black;
+    font-family: 'Indie Flower', cursive;
+
                    
-                    font-size: 30px;
+                    font-size: 35px;
                     font-weight: bold;
                     }
                     .main-blog-container {
