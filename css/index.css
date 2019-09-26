@@ -35,6 +35,9 @@ nav {
   height: 40px;
   margin: 5px;
 }
+a:hover {
+  color: blue;
+}
 .nav-logo {
   width: 200px;
   height: 200px;
@@ -60,6 +63,12 @@ nav {
     font-family: Times;
     font-family: 'Indie Flower', cursive;
   }
+}
+.expat-intro {
+  text-align: center;
+  font-size: 40px;
+  background: beige;
+  font-family: 'Indie Flower', cursive;
 }
 .banner-large {
   color: black;
@@ -137,6 +146,9 @@ nav {
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+.button:hover {
+  color: blue;
 }
 @media (max-width: 400px) {
   .button {
